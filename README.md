@@ -1,3 +1,11 @@
+Next.js, React, Typescript, Prisma, tRPC, PlanetScale + MySQL, tailwind.
+
+Deployed on Vercel
+
+
+using trpc9
+https://trpc.io/docs/v9/nextjs
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
