@@ -1,12 +1,26 @@
 import { getOptionsForVote } from '@/utils/GetRandomPokemon'
 import { trpc } from '@/utils/trpc'
 import type { NextPage } from 'next'
+import { useEffect, useState } from 'react';
 
-const Home: NextPage = () => {
+
+export default function Home () {
+
   // Default trpc test
   // const {data, isLoading} = trpc.useQuery(["hello", {text: 'pat'}])
   // if(isLoading) return <div>Loading...</div>
   // if (data) return <div>{data.greeting}</div>
+
+  // https://traviswimer.com/blog/easily-fix-react-hydration-errors/
+  const [hydrated, setHydrated] = useState(false);
+    // This forces a rerender, so the date is rendered
+		// the second time but not the first
+  useEffect(() => {		
+    setHydrated(true);
+  },[])
+  if (!hydrated){
+    return null;
+  }
 
   const [first, second] = getOptionsForVote();
   
@@ -23,4 +37,3 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
