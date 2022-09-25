@@ -22,7 +22,7 @@ export default function Home() {
   //   return null;
   // }
   const btn =
-  "inline-flex items-center px-3 py-1.5 border border-gray-300 shadow-sm font-medium rounded-full text-gray-700 bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500";
+  "inline-flex mt-[-2rem] items-center px-3 py-1.5 border border-gray-300 shadow-sm font-medium rounded-full text-gray-700 bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500";
 
 
   const [ids, updateIds] = useState(getOptionsForVote());
@@ -46,16 +46,16 @@ export default function Home() {
       <div className='border rounded p-8 flex items-center max-w-2xl justify-between'>
         <div className='w-64 h-64 flex flex-col items-center'>
           <div className='capitalize text-xl text-center'>{firstPokemon.data?.name}</div>
-          <img src={firstPokemon.data?.sprites.front_default!} className='w-full' />
+          <img src={firstPokemon.data?.sprites.front_default!} className='w-full mt-[-2rem]' />
           <button className={btn} onClick={() => voteForRoundest(first)}>Rounder</button>
         </div>
         <div className='p-8'>VS</div>
         <div className='w-64 h-64 flex flex-col items-center'>
           <div className='capitalize text-xl text-center'>{secondPokemon.data?.name}</div>
-          <img src={secondPokemon.data?.sprites.front_default!} className='w-full' />
+          <img src={secondPokemon.data?.sprites.front_default!} className='w-full mt-[-2rem]' />
           <button className={btn} onClick={() => voteForRoundest(second)}>Rounder</button>
         </div>
-        <div className="p-4"></div>
+        <div className=""></div>
       </div>
     </div>
   )

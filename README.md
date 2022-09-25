@@ -1,3 +1,8 @@
+https://roundest-mon-pk.vercel.app/
+
+https://www.youtube.com/watch?v=PKy2lYEnhgs&t=1201s&ab_channel=Theo-ping%E2%80%A4gg
+stopped at 56:16. better loading screen
+
 Next.js, React, Typescript, Prisma, tRPC, PlanetScale + MySQL, tailwind.
 
 Deployed on Vercel
